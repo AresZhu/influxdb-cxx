@@ -8,6 +8,7 @@
 #include <string>
 #include <chrono>
 #include <variant>
+#include <unordered_map>
 
 namespace influxdb
 {
@@ -23,10 +24,10 @@ class Point
     ~Point() = default;
 
     /// Adds a tags
-    Point&& addTag(std::string_view key, std::string_view value);
+    Point&& addTag(std::string key, std::string value);
 
     /// Adds filed
-    Point&& addField(std::string_view name, std::variant<int, long long int, std::string, double> value);
+    Point&& addField(std::string name, std::variant<int, long long int, std::string, double> value);
 
     /// Generetes current timestamp
     static auto getCurrentTimestamp() -> decltype(std::chrono::system_clock::now());
@@ -43,16 +44,15 @@ class Point
     /// Timestamp getter
     std::chrono::time_point<std::chrono::system_clock> getTimestamp() const;
 
-    /// Fields getter
+    std::string getTagField(const std::string &key) const;
+
+    bool fieldEmpty() const;
+
+private:
+    std::string getTags() const;
     std::string getFields() const;
 
-    /// Tags getter
-    std::string getTags() const;
-
   protected:
-    /// A value
-    std::variant<long long int, std::string, double> mValue;
-
     /// A name
     std::string mMeasurement;
 
@@ -60,10 +60,10 @@ class Point
     std::chrono::time_point<std::chrono::system_clock> mTimestamp;
 
     /// Tags
-    std::string mTags;
+    std::unordered_map<std::string, std::string> mTags;
 
     /// Fields
-    std::string mFields;
+    std::unordered_map<std::string, std::string> mFields;
 };
 
 } // namespace influxdb

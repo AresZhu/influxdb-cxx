@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="influxdb-cxx"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\Boost-1.70.0\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\boost_headers-1.70.0\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\boost_unit_test_framework-1.70.0\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\boost_system-1.70.0\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\boost_program_options-1.70.0\;CMake Files\cmake\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testUdp">
+				<Option output="/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/bin/testUdp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK"/>
+					<Add option="-DBOOST_ALL_NO_LIB"/>
+					<Add directory="/mnt/d/Repository/Ares/influxdb-cxx/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0/backward"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 testUdp"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testUdp/fast">
+				<Option output="/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/bin/testUdp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK"/>
+					<Add option="-DBOOST_ALL_NO_LIB"/>
+					<Add directory="/mnt/d/Repository/Ares/influxdb-cxx/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0/backward"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 testUdp/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testHttp">
+				<Option output="/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/bin/testHttp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK"/>
+					<Add option="-DBOOST_ALL_NO_LIB"/>
+					<Add directory="/mnt/d/Repository/Ares/influxdb-cxx/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0/backward"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 testHttp"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testHttp/fast">
+				<Option output="/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/bin/testHttp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK"/>
+					<Add option="-DBOOST_ALL_NO_LIB"/>
+					<Add directory="/mnt/d/Repository/Ares/influxdb-cxx/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0/backward"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 testHttp/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="benchmark">
+				<Option output="/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/bin/benchmark" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_PROGRAM_OPTIONS_DYN_LINK"/>
+					<Add option="-DBOOST_ALL_NO_LIB"/>
+					<Add directory="/mnt/d/Repository/Ares/influxdb-cxx/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0/backward"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 benchmark"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="benchmark/fast">
+				<Option output="/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/bin/benchmark" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_PROGRAM_OPTIONS_DYN_LINK"/>
+					<Add option="-DBOOST_ALL_NO_LIB"/>
+					<Add directory="/mnt/d/Repository/Ares/influxdb-cxx/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0/backward"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 benchmark/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testPoint">
+				<Option output="/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/bin/testPoint" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK"/>
+					<Add option="-DBOOST_ALL_NO_LIB"/>
+					<Add directory="/mnt/d/Repository/Ares/influxdb-cxx/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0/backward"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 testPoint"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testPoint/fast">
+				<Option output="/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/bin/testPoint" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK"/>
+					<Add option="-DBOOST_ALL_NO_LIB"/>
+					<Add directory="/mnt/d/Repository/Ares/influxdb-cxx/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0/backward"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 testPoint/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testQuery">
+				<Option output="/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/bin/testQuery" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK"/>
+					<Add option="-DBOOST_ALL_NO_LIB"/>
+					<Add directory="/mnt/d/Repository/Ares/influxdb-cxx/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0/backward"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 testQuery"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testQuery/fast">
+				<Option output="/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/bin/testQuery" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK"/>
+					<Add option="-DBOOST_ALL_NO_LIB"/>
+					<Add directory="/mnt/d/Repository/Ares/influxdb-cxx/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0/backward"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 testQuery/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test">
+				<Option working_dir="/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testFactory">
+				<Option output="/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/bin/testFactory" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK"/>
+					<Add option="-DBOOST_ALL_NO_LIB"/>
+					<Add directory="/mnt/d/Repository/Ares/influxdb-cxx/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0/backward"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 testFactory"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testFactory/fast">
+				<Option output="/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/bin/testFactory" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK"/>
+					<Add option="-DBOOST_ALL_NO_LIB"/>
+					<Add directory="/mnt/d/Repository/Ares/influxdb-cxx/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0/backward"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 testFactory/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="InfluxDB">
+				<Option output="/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/lib/libInfluxDB.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DINFLUXDB_WITH_BOOST"/>
+					<Add option="-DBOOST_SYSTEM_DYN_LINK"/>
+					<Add option="-DBOOST_ALL_NO_LIB"/>
+					<Add directory="/mnt/d/Repository/Ares/influxdb-cxx/include"/>
+					<Add directory="/mnt/d/Repository/Ares/influxdb-cxx/src"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0/backward"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 InfluxDB"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="InfluxDB/fast">
+				<Option output="/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/lib/libInfluxDB.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DINFLUXDB_WITH_BOOST"/>
+					<Add option="-DBOOST_SYSTEM_DYN_LINK"/>
+					<Add option="-DBOOST_ALL_NO_LIB"/>
+					<Add directory="/mnt/d/Repository/Ares/influxdb-cxx/include"/>
+					<Add directory="/mnt/d/Repository/Ares/influxdb-cxx/src"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0/backward"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include"/>
+					<Add directory="/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 InfluxDB/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/mnt/d/Repository/Ares/influxdb-cxx/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/mnt/d/Repository/Ares/influxdb-cxx/src/HTTP.cxx">
+			<Option target="InfluxDB"/>
+		</Unit>
+		<Unit filename="/mnt/d/Repository/Ares/influxdb-cxx/src/HTTP.h">
+			<Option target="InfluxDB"/>
+		</Unit>
+		<Unit filename="/mnt/d/Repository/Ares/influxdb-cxx/src/InfluxDB.cxx">
+			<Option target="InfluxDB"/>
+		</Unit>
+		<Unit filename="/mnt/d/Repository/Ares/influxdb-cxx/src/InfluxDBFactory.cxx">
+			<Option target="InfluxDB"/>
+		</Unit>
+		<Unit filename="/mnt/d/Repository/Ares/influxdb-cxx/src/Point.cxx">
+			<Option target="InfluxDB"/>
+		</Unit>
+		<Unit filename="/mnt/d/Repository/Ares/influxdb-cxx/src/UDP.cxx">
+			<Option target="InfluxDB"/>
+		</Unit>
+		<Unit filename="/mnt/d/Repository/Ares/influxdb-cxx/src/UDP.h">
+			<Option target="InfluxDB"/>
+		</Unit>
+		<Unit filename="/mnt/d/Repository/Ares/influxdb-cxx/src/UnixSocket.cxx">
+			<Option target="InfluxDB"/>
+		</Unit>
+		<Unit filename="/mnt/d/Repository/Ares/influxdb-cxx/src/UnixSocket.h">
+			<Option target="InfluxDB"/>
+		</Unit>
+		<Unit filename="/mnt/d/Repository/Ares/influxdb-cxx/test/benchmark.cxx">
+			<Option target="benchmark"/>
+		</Unit>
+		<Unit filename="/mnt/d/Repository/Ares/influxdb-cxx/test/testFactory.cxx">
+			<Option target="testFactory"/>
+		</Unit>
+		<Unit filename="/mnt/d/Repository/Ares/influxdb-cxx/test/testHttp.cxx">
+			<Option target="testHttp"/>
+		</Unit>
+		<Unit filename="/mnt/d/Repository/Ares/influxdb-cxx/test/testPoint.cxx">
+			<Option target="testPoint"/>
+		</Unit>
+		<Unit filename="/mnt/d/Repository/Ares/influxdb-cxx/test/testQuery.cxx">
+			<Option target="testQuery"/>
+		</Unit>
+		<Unit filename="/mnt/d/Repository/Ares/influxdb-cxx/test/testUdp.cxx">
+			<Option target="testUdp"/>
+		</Unit>
+		<Unit filename="/mnt/d/Repository/Ares/influxdb-cxx/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/mnt/d/Repository/Ares/influxdb-cxx/../../../../../usr/local/lib/cmake/BoostDetectToolset-1.70.0.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\"/>
+		</Unit>
+		<Unit filename="/mnt/d/Repository/Ares/influxdb-cxx/../../../../../usr/local/lib/cmake/Boost-1.70.0/BoostConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\Boost-1.70.0\"/>
+		</Unit>
+		<Unit filename="/mnt/d/Repository/Ares/influxdb-cxx/../../../../../usr/local/lib/cmake/Boost-1.70.0/BoostConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\Boost-1.70.0\"/>
+		</Unit>
+		<Unit filename="/mnt/d/Repository/Ares/influxdb-cxx/../../../../../usr/local/lib/cmake/boost_headers-1.70.0/boost_headers-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\boost_headers-1.70.0\"/>
+		</Unit>
+		<Unit filename="/mnt/d/Repository/Ares/influxdb-cxx/../../../../../usr/local/lib/cmake/boost_headers-1.70.0/boost_headers-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\boost_headers-1.70.0\"/>
+		</Unit>
+		<Unit filename="/mnt/d/Repository/Ares/influxdb-cxx/../../../../../usr/local/lib/cmake/boost_unit_test_framework-1.70.0/boost_unit_test_framework-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\boost_unit_test_framework-1.70.0\"/>
+		</Unit>
+		<Unit filename="/mnt/d/Repository/Ares/influxdb-cxx/../../../../../usr/local/lib/cmake/boost_unit_test_framework-1.70.0/boost_unit_test_framework-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\boost_unit_test_framework-1.70.0\"/>
+		</Unit>
+		<Unit filename="/mnt/d/Repository/Ares/influxdb-cxx/../../../../../usr/local/lib/cmake/boost_unit_test_framework-1.70.0/libboost_unit_test_framework-variant-shared.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\boost_unit_test_framework-1.70.0\"/>
+		</Unit>
+		<Unit filename="/mnt/d/Repository/Ares/influxdb-cxx/../../../../../usr/local/lib/cmake/boost_unit_test_framework-1.70.0/libboost_unit_test_framework-variant-static.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\boost_unit_test_framework-1.70.0\"/>
+		</Unit>
+		<Unit filename="/mnt/d/Repository/Ares/influxdb-cxx/../../../../../usr/local/lib/cmake/boost_system-1.70.0/boost_system-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\boost_system-1.70.0\"/>
+		</Unit>
+		<Unit filename="/mnt/d/Repository/Ares/influxdb-cxx/../../../../../usr/local/lib/cmake/boost_system-1.70.0/boost_system-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\boost_system-1.70.0\"/>
+		</Unit>
+		<Unit filename="/mnt/d/Repository/Ares/influxdb-cxx/../../../../../usr/local/lib/cmake/boost_system-1.70.0/libboost_system-variant-shared.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\boost_system-1.70.0\"/>
+		</Unit>
+		<Unit filename="/mnt/d/Repository/Ares/influxdb-cxx/../../../../../usr/local/lib/cmake/boost_system-1.70.0/libboost_system-variant-static.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\boost_system-1.70.0\"/>
+		</Unit>
+		<Unit filename="/mnt/d/Repository/Ares/influxdb-cxx/../../../../../usr/local/lib/cmake/boost_program_options-1.70.0/boost_program_options-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\boost_program_options-1.70.0\"/>
+		</Unit>
+		<Unit filename="/mnt/d/Repository/Ares/influxdb-cxx/../../../../../usr/local/lib/cmake/boost_program_options-1.70.0/boost_program_options-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\boost_program_options-1.70.0\"/>
+		</Unit>
+		<Unit filename="/mnt/d/Repository/Ares/influxdb-cxx/../../../../../usr/local/lib/cmake/boost_program_options-1.70.0/libboost_program_options-variant-shared.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\boost_program_options-1.70.0\"/>
+		</Unit>
+		<Unit filename="/mnt/d/Repository/Ares/influxdb-cxx/../../../../../usr/local/lib/cmake/boost_program_options-1.70.0/libboost_program_options-variant-static.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\boost_program_options-1.70.0\"/>
+		</Unit>
+		<Unit filename="/mnt/d/Repository/Ares/influxdb-cxx/cmake/FindCURL.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/mnt/d/Repository/Ares/influxdb-cxx/cmake/InfluxDBConfig.cmake.in">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

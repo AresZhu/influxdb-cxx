@@ -13,6 +13,8 @@
 
 #include "Transport.h"
 #include "Point.h"
+#include "concurrentqueue.h"
+#include <thread>
 
 namespace influxdb
 {
@@ -39,27 +41,29 @@ class InfluxDB
     /// Queries InfluxDB database
     std::vector<Point> query(const std::string& query);
 
-    /// Flushes metric buffer (this can also happens when buffer is full)
-    void flushBuffer();
-
     /// Enables metric buffering
     /// \param size
     void batchOf(const std::size_t size = 32);
+
+    void intervalAt(const int interval = 5);
 
     /// Adds a global tag
     /// \param name
     /// \param value
     void addGlobalTag(std::string_view name, std::string_view value);
 
+private:
+    void daemon();
+    bool running = true;
+
   private:
     /// Buffer for points
-    std::deque<std::string> mBuffer;
-
-    /// Flag stating whether point buffering is enabled
-    bool mBuffering;
+    moodycamel::ConcurrentQueue<std::string> mBuffer;
 
     /// Buffer size
     std::size_t mBufferSize;
+
+    int flushInterval;
 
     /// Underlying transport UDP/HTTP/Unix socket
     std::unique_ptr<Transport> mTransport;
@@ -69,6 +73,8 @@ class InfluxDB
 
     /// List of global tags
     std::string mGlobalTags;
+
+    std::thread transmitThread;
 };
 
 } // namespace influxdb

@@ -5,7 +5,7 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 3.5.2 FATAL_ERROR)
 
 option(BUILD_SHARED_LIBS "Build shared versions of libraries" ON)
-option(INFLUXCXX_TESTING "Enable testing for this component" ON)
+
 
 # Set cmake policy by version: https://cmake.org/cmake/help/latest/manual/cmake-policies.7.html
 if(${CMAKE_VERSION} VERSION_LESS 3.12)
